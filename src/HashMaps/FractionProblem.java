@@ -1,3 +1,5 @@
+package HashMaps;
+
 import java.util.ArrayList;
 
 class Solution {
@@ -91,7 +93,7 @@ class Solution {
         return baseFraction.toString();
     }
     public ArrayList<Fraction> parseFractions(String expression) {
-        ArrayList<Fraction> allFractions = new ArrayList()<>();
+        ArrayList<Fraction> allFractions = new ArrayList<>();
         int i = 0;
         do {
             Fraction fraction = new Fraction();

@@ -1,4 +1,4 @@
-package BinaryTrees;
+package Trees;
 
 // Node definition for the Binary Tree
 class Node {
@@ -12,14 +12,14 @@ class Node {
 }
 
 // Binary Tree class
-class BinaryTree {
+class BinarySearchTree {
     Node root;
 
-    BinaryTree() {
+    BinarySearchTree() {
         root = null;
     }
 
-    // Insert a node (simple insertion in left-most available spot)
+    // Insert a Node (simple insertion in left-most available spot)
     public Node insert(Node root, int data) {
         if (root == null) {
             return new Node(data);
@@ -59,7 +59,7 @@ class BinaryTree {
         }
     }
 
-    // Search for a node
+    // Search for a Node
     public boolean search(Node root, int key) {
         if (root == null) {
             return false;
@@ -70,7 +70,7 @@ class BinaryTree {
         return key < root.data ? search(root.left, key) : search(root.right, key);
     }
 
-    // Delete a node
+    // Delete a Node
     public Node delete(Node root, int key) {
         if (root == null) {
             return root;
@@ -98,7 +98,7 @@ class BinaryTree {
         return root;
     }
 
-    // Find minimum value node (used in deletion)
+    // Find minimum value Node (used in deletion)
     private Node findMin(Node root) {
         while (root.left != null) {
             root = root.left;
@@ -107,13 +107,13 @@ class BinaryTree {
     }
 
     public static void main(String[] args) {
-        BinaryTree tree = new BinaryTree();
+        BinarySearchTree tree = new BinarySearchTree();
 
         tree.root = tree.insert(tree.root, 50);
         tree.insert(tree.root, 30);
         tree.insert(tree.root, 70);
         tree.insert(tree.root, 20);
-        tree.insert(tree.root, 40);
+        tree.insert(tree.root, 40); 
         tree.insert(tree.root, 60);
         tree.insert(tree.root, 80);
 

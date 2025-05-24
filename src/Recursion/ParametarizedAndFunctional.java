@@ -1,4 +1,5 @@
-package Recursions;
+package Recursion;
+
 
 public class ParametarizedAndFunctional {
     static void printSumParametarized(int n, int sum){

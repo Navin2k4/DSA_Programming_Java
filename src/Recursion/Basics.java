@@ -1,4 +1,4 @@
-package Recursions;
+package Recursion;
 
 public class Basics {
     static void tailRec(int n){
@@ -26,13 +26,13 @@ public class Basics {
     }
     public static void main(String[] args) {
         int n = 5;
-//        System.out.println("Tail Recursion : "); // Task completed before function call
-//        tailRec(n);
-//        System.out.println("Head Recursion : "); // Task completed after function call
-//        headRec(n);
-//        System.out.println("Fibonacci Value : " + fib(10));
-//        System.out.println("Factorial Value : " + factorial(5));
-//        printNames(1,3);
+       System.out.println("Tail Recursion : "); // Task completed before function call
+       tailRec(n);
+       System.out.println("Head Recursion : "); // Task completed after function call
+       headRec(n);
+       System.out.println("Fibonacci Value : " + fib(10));
+       System.out.println("Factorial Value : " + factorial(5));
+       printNames(1,3);
 
     }
 }

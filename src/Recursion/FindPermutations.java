@@ -1,4 +1,5 @@
-package Recursions;
+package Recursion;
+
 
 public class FindPermutations {
     static boolean isValid(char c) {

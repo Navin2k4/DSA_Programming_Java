@@ -5,14 +5,24 @@ import java.util.ArrayList;
 public class SubSequence {
     public static void main(String[] args) {
         // subseqAscii("","abc");
-        subseq("","abc");
+        // subseq("","abc");
+        subString("123", 0);
         // System.out.println(subseqArr("","abc"));
         // System.out.println(subseqAsciiArr("","abc"));
+    }
+    
+    static void subString(String s, int start){
+        if(start == s.length()) return;
+        for(int end = start; end<s.length();end++){
+            String currentSubString = s.substring(start, end+1);
+            System.out.println(currentSubString);
+        }
+        subString(s, start+1);
     }
 
     static void subseq(String p,String up){
         if(up.isEmpty()){
-            System.out.println(p);
+            System.out.println(p);  
             return;
         }
         char ch = up.charAt(0);
